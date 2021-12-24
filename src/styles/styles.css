@@ -1,0 +1,51 @@
+@font-face {
+    font-family: TerminalFont;
+    src: url(fonts/Ubuntu\ Mono\ Nerd\ Font\ Complete\ Mono.ttf);
+}
+
+body {
+    font-family: TerminalFont;
+    counter-reset: line;
+}
+
+.char {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.word {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.lineEnd {
+    display: inline-block;
+}
+
+.lastChar {
+    background-color: #464646;
+}
+
+.line {
+    white-space: nowrap;
+    background-color: #262626;
+    color: #ffffff;
+}
+
+.line::before {
+    counter-increment: line;
+    display: inline-block;
+    width: 2em;
+    margin-right: 1em;
+    text-align: right;
+    content: counter(line);
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
