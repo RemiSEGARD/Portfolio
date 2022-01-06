@@ -1,0 +1,25 @@
+{
+    "title": "main.p",
+    "content": ["Welcome to my Portfolio!",
+        "",
+        "My name is Rémi SEGARD, I am a student at EPITA, learning about computer science.",
+        "",
+        "If you wish to know more about what I learn and my projects, go to the following section: projects(), abilities().",
+        "",
+        "You can also get in contact with me with the following page: contact().",
+        ""
+    ],
+    "specialWords": [
+        {
+            "word": "contact()",
+            "link": "test"
+        }, {
+            "word": "projects()",
+            "link": "test"
+        }, {
+            "word": "abilities()",
+            "link": "test"
+        }
+    ],
+    "keyWords" : ["Rémi", "SEGARD", "EPITA"]
+}

@@ -3,11 +3,6 @@
     src: url(fonts/Ubuntu\ Mono\ Nerd\ Font\ Complete\ Mono.ttf);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: TerminalFont;
     counter-reset: line;
@@ -22,9 +17,24 @@ body {
     color: black;
 }
 
+.cursorline::before {
+    color: #4979ff !important;
+}
+.cursorline {
+    background-color: #343434;
+}
+
 .char {
     display: inline-block;
     white-space: nowrap;
+}
+
+.keyWord {
+    color : #92c5f7 !important;
+}
+
+.specialWord {
+    color: #dad085 !important;
 }
 
 .word {
@@ -44,7 +54,7 @@ body {
 .line {
     white-space: nowrap;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .line::before {
@@ -64,12 +74,11 @@ body {
     border-radius: 25px;
     padding: auto;
     float: left;
-    width: 50em;
+    width: 45em;
     height: 90%;
     border-color: black;
-    outline: 4px solid black;
-    outline-offset: -4px;
-    box-shadow: 5px 5px 5px black ;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px black ;
 }
 
 .unselectable {
